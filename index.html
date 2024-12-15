@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="logo">Pinterest</div>
+    <input type="text" placeholder="Search..." class="search-bar">
+    <button class="add-button">+</button>
+    <input type="file" id="imageUploader" style="display: none;" accept="image/*">
+      <!-- Botón de perfil -->
+  <div class="buttons-container">
+    <button class="profile-button" onclick="goToLogin()">
+      <i class="fa fa-user"></i>
+    </button>
+  </div>
+  
+  </header>
+
+  <main class="grid-container">
+    <!-- Cada tarjeta será un elemento de esta grid -->
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1wTLH1pIFdtAISBNMadUPJ3cgoWLryTx2Rg&s" alt="Image 1"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNlCneTCZIpfhiUxwudCSxW43qi1IG0gVdkA&s" alt="Image 4"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPrcjrH4iu2c3Q-vpGJDdrxoluiGxau7WDQ&s" alt="Image 5"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJVUmg_OaDjJiCOR-ffyrSMo6Zi4QDUGeBg&s" alt="Image 5"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjre2Jj-RC2uc3YdUm5pFGM1E1RPO1tcGsmQ&s" alt="Image 5"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tDlA-RIhxXJl9kut8ntF5ByP7b0tu6BH-Q&s" alt="Image 5"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBRaEYG0Qm_p6u1sOv2jkseIzq15rI0HV3DQ&s" alt="Image 5"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8euOAhMKU4g_duUHn6SGm5xmxkgVmRdDbQ&s" alt="Image 2"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFD_ksf9QU5EW-IAskTnvEYIeBZWbphXSzyQ&s" alt="Image 3"></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5hd-I92RJaH_JqJerpnGFWS7KFSwNNpPQQ&s" alt="Image 6"></div>
+    <!-- Agrega más tarjetas aquí -->
+  </main>
+
+  <!-- Modal para añadir descripción -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Añadir descripción</h2>
+      <textarea id="imageDescription" placeholder="Escribe una descripción..."></textarea>
+      <button id="saveButton">Guardar</button>
+      <button id="cancelButton">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+  
+  <!-- Botón de perfil 
+  <div class="buttons-container">
+    <button class="profile-button" onclick="goToLogin()">
+      <i class="fa fa-user"></i>
+    </button>
+  </div>-->
+  
